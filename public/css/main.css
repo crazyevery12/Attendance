@@ -1,0 +1,27 @@
+body {
+    background: -webkit-linear-gradient(left, #35c2de , #efddd1);
+}
+a, u {
+    text-decoration: none;
+}
+
+.img-logo {
+	max-width: 70px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/*.img-logo-home {
+	max-width: 30px;
+	float: left;
+	margin-left: 10px;
+}
+*/
+.header-update {
+	margin-bottom: 50px;
+	font-weight: 500;
+	font-size: 16px;
+}
