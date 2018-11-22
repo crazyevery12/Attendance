@@ -16,7 +16,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'account_name', 'account_password', 'email', 'first_name', 'last_name', 'birthday', 'gender',
+        //'account_name', 'account_password', 'email', 'first_name', 'last_name', 'birthday', 'gender',
+        'email', 'password', 'first_name', 'last_name', 'birthday', 'gender',
     ];
 
     /**
@@ -25,6 +26,6 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'account_password', 'remember_token',
+        'password', 'remember_token',
     ];
 }
