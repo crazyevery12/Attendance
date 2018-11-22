@@ -24,4 +24,9 @@ Route::post('/logout', function(){
 	return redirect('/login');
 })->name('user.logout');
 
+Route::group(['prefix' => 'user', 'middleware' => ['auth']], function() {
+	Route::get('/', 'UserController@index')->name('user.index');
+
+});
+
 Route::get('/home', 'HomeController@index')->name('home');
