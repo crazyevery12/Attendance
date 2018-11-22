@@ -25,3 +25,19 @@ a, u {
 	font-weight: 500;
 	font-size: 16px;
 }
+
+.dot-onl {
+	height: 15px;
+    width: 15px;
+    background-color: #10e822;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-off {
+	height: 15px;
+    width: 15px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
