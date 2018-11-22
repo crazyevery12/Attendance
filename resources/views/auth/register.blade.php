@@ -90,8 +90,18 @@
                                     <option value="1">Male</option>
                                     <option value="2">Female</option>
                                 </select>
-                               </div>
-                           </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="position" class="col-sm-4 col-form-label text-md-right">{{ __('Position') }}</label>
+                            <div class="col-md-6">
+                                <select id="position" name="position" class="form-control">
+                                    <option value="1">Teacher</option>
+                                    <option value="2">Student</option>
+                                </select>
+                            </div>
+                        </div>
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
