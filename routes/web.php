@@ -17,4 +17,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::post('/logout', function(){
+	Auth::user()->update(['status'=>0]);
+	Auth::logout();
+
+	return redirect('/login');
+})->name('user.logout');
+
 Route::get('/home', 'HomeController@index')->name('home');
