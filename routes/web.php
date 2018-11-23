@@ -17,8 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::post('/logout', function(){
-	Auth::user()->update(['status'=>0]);
+Route::GET('/logout', function(){
+	if (Auth::check())
+		Auth::user()->update(['status'=>0]);
 	Auth::logout();
 
 	return redirect('/login');
