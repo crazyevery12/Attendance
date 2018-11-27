@@ -12,13 +12,8 @@
 				<h1>List student</h1>
 				<div class="card">
 					<div class="card-header">List student</div>
-<<<<<<< HEAD
 					<div class="card-body table-responsive-md">
 						<table class="table table-sm table-Light">
-=======
-					<div class="card-body">
-						<table class="table">
->>>>>>> update user information
 							<thead class="thead-dark">
 								<tr>		
 									<th scope="col">#</th>							
