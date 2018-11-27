@@ -9,9 +9,9 @@
 		@endif
 		<div class="d-flex justify-content-center">
 			<div class="col-md-12">
-				<h1>List user</h1>
+				<h1>List student</h1>
 				<div class="card">
-					<div class="card-header">List user</div>
+					<div class="card-header">List student</div>
 					<div class="card-body table-responsive-md">
 						<table class="table table-sm table-Light">
 							<thead class="thead-dark">
@@ -32,8 +32,12 @@
 									<td>{{ $user->first_name }} {{ $user->last_name }}</td>
 									<td>{{ $user->email}}</td>
 									<td>{{ $user->birthday}}</td>
-									<td><span class="{{ $user->status == 1 ? 'dot-onl' : 'dot-off'}}"></span></td>
-									<td>{{ $user->created_at}}</td>
+									@if ($user->status == 1)
+										<td><span class="dot-onl"></span></td>
+									@else
+										<td><span class="dot-off"></span></td>
+									@endif
+									<td>{{ $user->updated_at}}</td>
 								</tr>
 									
 								@endforeach

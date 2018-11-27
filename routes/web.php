@@ -17,8 +17,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::post('/logout', function(){
-	Auth::user()->update(['status'=>0]);
+Route::GET('/logout', function(){
+	if (Auth::check())
+		Auth::user()->update(['status'=>0]);
 	Auth::logout();
 
 	return redirect('/login');
@@ -26,7 +27,8 @@ Route::post('/logout', function(){
 
 Route::group(['prefix' => 'user', 'middleware' => ['auth']], function() {
 	Route::get('/', 'UserController@index')->name('user.index');
-
+	Route::get('edit', 'UserController@edit')->name('user.edit');
+	Route::put('update', 'UserController@update')->name('user.update');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');
