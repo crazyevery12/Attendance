@@ -12,16 +12,16 @@
 				<h1>List student</h1>
 				<div class="card">
 					<div class="card-header">List student</div>
-					<div class="card-body">
-						<table class="table">
+					<div class="card-body table-responsive-md">
+						<table class="table table-sm table-Light">
 							<thead class="thead-dark">
 								<tr>		
-									<th>#</th>							
-									<th>FullName</th>
-									<th>Email</th>
-									<th>Birthday</th>
-									<th>Status</th>
-									<th>Created at</th>
+									<th scope="col">#</th>							
+									<th scope="col">FullName</th>
+									<th scope="col">Email</th>
+									<th scope="col">Birthday</th>
+									<th scope="col">Status</th>
+									<th scope="col">Created at</th>
 								</tr>
 							</thead>
 							<tbody>
