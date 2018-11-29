@@ -4,8 +4,8 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">EDIT INFORMATION</div>
+            <div class="card" style="border-radius: 20px">
+                <div class="card-header"><h1 style="color : #35c2de">Edit Information</h1></div>
                 @if (session('message'))
                 <div class="alert alert-{{ session('level') }}" role="alert">
                     <strong>{{session('message')}}</strong>

@@ -12,12 +12,16 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
+                background: -webkit-linear-gradient(left, #35c2de , #efddd1);;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+            }
+
+            .logo-welcome {
+                max-width: 40%;
             }
 
             .full-height {
@@ -38,6 +42,7 @@
                 position: absolute;
                 right: 10px;
                 top: 18px;
+                color: #02305c;
             }
 
             .content {
@@ -49,7 +54,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #02305c;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -81,7 +86,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    <img class="logo-welcome" src="{{ asset('images/logo.png') }}">
                 </div>
 
                 <div class="links">
