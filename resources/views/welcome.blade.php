@@ -56,8 +56,8 @@
             .links > a {
                 color: #02305c;
                 padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
+                font-size: 14px;
+                font-weight: 700;
                 letter-spacing: .1rem;
                 text-decoration: none;
                 text-transform: uppercase;
@@ -90,12 +90,12 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="http://vnuk.udn.vn/academic-year/?lang=en">Study</a>
+                    <a href="http://vnuk.udn.vn/international-exchange-opportunities/?lang=en">International</a>
+                    <a href="http://tuyensinhvnuk.edu.vn">Admission</a>
+                    <a href="http://vnuk.udn.vn/research-introduction/?lang=en">Research</a>
+                    <a href="http://vnuk.udn.vn/industry-relation-about/?lang=en">Industry</a>
+                    <a href="http://vnuk.udn.vn/discovery/?lang=en">Discovery</a>
                 </div>
             </div>
         </div>
